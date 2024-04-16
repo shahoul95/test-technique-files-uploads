@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <UploadFile @form-value.once="getFormValue" />
+    <UploadFile @form-value="getFormValue" />
     <div class="mt-5 m-4" ref="table"></div>
   </div>
 </template>
@@ -234,7 +234,7 @@ export default {
   },
   methods: {
     getFormValue(form) {
-      console.log({ form });
+   
       const { category, recipient, label, comment, file } = form;
       const now = new Date();
       const day = String(now.getDate()).padStart(2, "0");
