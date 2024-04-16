@@ -255,7 +255,7 @@ export default {
         libelle: label,
         categorie: category,
         comments: comment,
-        dateDeposite: dateNow,
+        dateDeposite: dateNow + " " + timeNow,
         create: "Jean Dupont",
         destinataire: recipient,
         status: "En attente",
