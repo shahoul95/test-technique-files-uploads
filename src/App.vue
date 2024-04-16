@@ -234,7 +234,6 @@ export default {
   },
   methods: {
     getFormValue(form) {
-   
       const { category, recipient, label, comment, file } = form;
       const now = new Date();
       const day = String(now.getDate()).padStart(2, "0");

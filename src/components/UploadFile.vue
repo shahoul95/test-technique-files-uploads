@@ -146,7 +146,6 @@ export default {
         return;
       }
 
-
       const formData = {
         label: this.label,
         category: this.category,
@@ -156,7 +155,6 @@ export default {
       };
       this.$emit("formValue", formData);
 
- 
       this.validationError = "";
       this.label = "";
       this.category = "";
